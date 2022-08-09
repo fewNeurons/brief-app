@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "brief-ionic-app"
+  },
+  "targets": {
+    "brief-ionic-app": {
+      "hosting": {
+        "app": [
+          "brief-ionic-app"
+        ]
+      }
+    }
+  }
+}
