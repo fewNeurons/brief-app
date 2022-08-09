@@ -14,9 +14,36 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <h2> homeee yes </h2>
+  <!-- <div id="container"> -->
+    <h2>  </h2>
     <div class="form-container">
-    </div> 
-  </div>
+      <ion-input [(ngModel)]="apiUrl" placeholder="Commerce Url"></ion-input>
+      <ion-input [(ngModel)]="consumerKey" placeholder="consumerKey"></ion-input>
+      <ion-input [(ngModel)]="consumerSecret" placeholder="consumerSecret"></ion-input>
+    </div>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col> Image </ion-col>
+        <ion-col> Name </ion-col>
+        <ion-col> SKU </ion-col>
+        <ion-col> Price </ion-col>
+        <ion-col> Categories </ion-col>
+        <ion-col> Tags </ion-col>
+        <ion-col> Featured </ion-col>
+        <ion-col> Date </ion-col>
+      </ion-row>
+      <ion-row *ngFor="let product of processedProducts()">
+        <ion-col> <ion-icon name="pencil"></ion-icon></ion-col>
+        <ion-col>{{ product.name }}</ion-col>
+        <ion-col>{{ product.sku || '-' }}</ion-col>
+        <ion-col>{{ product.regular_price ? product.purchase_price+' - '+product.regular_price : '-' }}</ion-col>
+        <ion-col>{{ product.categories }}</ion-col>
+        <ion-col>{{ product.tags }}</ion-col>
+        <ion-col><ion-icon [name]="product.featured ? 'star' : 'star-outline'" ></ion-icon></ion-col>
+        <ion-col>{{ 'Last modified ' + (product.date_modified || product.date_created).substr(0,16).replace('T', ' at ') }}</ion-col>
+      </ion-row>
+    </ion-grid>
+  <!-- </div> -->
+
 </ion-content>

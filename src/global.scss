@@ -61,5 +61,10 @@ ion-button {
     align-items: center;
     gap: 9px; 
     width: auto;
-    margin: 12px;
+    margin: 30px 16px;  
   }
+
+ion-col {
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+}
