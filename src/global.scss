@@ -38,8 +38,21 @@ h2 {
 ion-input {
     border: 1px solid rgb(185, 185, 185);
     border-radius: 8px;
+    height: 20px;
     width: 100%;
     max-width: 430px;
+}
+
+ion-button {
+    --border-radius: 8px;
+}
+
+.big-button {
+    height: 51px;
+    width: 100%;
+    max-width: 430px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 8%), 0 2px 4px rgb(0 0 0 / 12%);
 }
 
 .form-container {
