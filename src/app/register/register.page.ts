@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-register',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class RegisterPage {
 
-  constructor() {}
+  constructor(private navController: NavController) {}
+
+  goToLogin(idVideo: string){
+    console.log(idVideo);
+    this.navController.navigateForward('/login')
+  }
 
 }
