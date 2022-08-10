@@ -24,8 +24,11 @@ export class LoginPage {
     const user = await this.authService.login(this.email, this.password)
     
     if(user) 
-      this.goToHome()
+      this.goToHome();
+    else if(!this.email || !this.password) {
+      window.alert('Please, fill in your credentials');
+    }
     else
-      window.alert('Registration failed... Please try again')
+      window.alert('Login failed... Please try again');
   }
 }

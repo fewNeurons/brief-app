@@ -16,7 +16,7 @@
   <div id="container">
     <h2>🔥 Log in to Brief</h2>
     <div class="form-container">
-      <ion-input [(ngModel)]="email" placeholder="Email"></ion-input>
+      <ion-input [(ngModel)]="email" placeholder="Email" type="email"></ion-input>
       <ion-input [(ngModel)]="password" placeholder="Password" type="password"></ion-input>
       <ion-button class="big-button" (click)="login()">Log in</ion-button>
       <div>Don’t have an account? <button (click)="goToRegister()"> Sign up</button></div>

@@ -25,18 +25,22 @@ export class HomePage implements OnInit {
     ) { }
 
   ngOnInit() {
+    this.getProducts();
+  }
+
+  private getProducts() {
     try {
       this.wDataService.getProducts(
-        this.apiUrl, 
-        this.consumerKey, 
+        this.apiUrl,
+        this.consumerKey,
         this.consumerSecret
-      ).subscribe(res =>{
-        this.products = res
+      ).subscribe(res => {
+        this.products = res;
 
-        console.log(" this.products: ",  this.products);
-      })
-    } catch(e) {
-      console.log(e)
+        console.log(" this.products: ", this.products);
+      });
+    } catch (e) {
+      console.log(e);
     }
   }
 
