@@ -25,6 +25,9 @@ export class RegisterPage {
     
     if(user) 
       this.goToLogin()
+    else if(!this.email || !this.password) {
+      window.alert('Please, fill in your credentials');
+    }
     else
       window.alert('Registration failed... Please try again')
   }

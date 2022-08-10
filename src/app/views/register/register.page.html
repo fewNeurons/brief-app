@@ -17,7 +17,7 @@
     <h2>🔥 Create your Brief account</h2>
     <div class="form-container">
       <ion-input placeholder="Your name"></ion-input>
-      <ion-input [(ngModel)]="email" placeholder="Email"></ion-input>
+      <ion-input [(ngModel)]="email" placeholder="Email" type="email"></ion-input>
       <ion-input [(ngModel)]="password" placeholder="Password" type="password"></ion-input>
       <ion-button class="big-button" (click)="register()">Create account</ion-button>
       <div>Already have an account? <button (click)="goToLogin()"> Log in</button></div>
