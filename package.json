@@ -26,14 +26,16 @@
     "@capacitor/keyboard": "4.0.1",
     "@capacitor/status-bar": "4.0.1",
     "@ionic/angular": "^6.1.9",
+    "angular": "^1.8.3",
     "axios": "^0.27.2",
+    "ionic": "^5.4.16",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "woocommerce-api": "^1.4.2",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^14.0.0",
+    "@angular-devkit/build-angular": "^14.1.1",
     "@angular-eslint/builder": "~13.0.1",
     "@angular-eslint/eslint-plugin": "~13.0.1",
     "@angular-eslint/eslint-plugin-template": "~13.0.1",
